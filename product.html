@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!--*font & icons-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="bower_components/themify-icons/themify-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="fontAw.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    
+    <!--css-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/slick.css">
+
+    <!--js-->
+
+    <script src="./js/index.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./js/slick.js"></script>
+    <title>new</title>
+    <title>Product</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand" style="background-color: black;margin: 0px;border: 0px;border-radius: 0px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+            <a href="./index.html" class="main_btn">
+                <li style="position: relative;left: 2rem;display: flex;cursor: pointer;">
+                    <img src="./images/loo.png" alt="" style="width: 3.5rem;height: 3.5rem;margin-top:.9rem;">
+                    <p style="font-size: 2.3rem;color: white;margin-top: .9rem;">EGY Coffee</p>
+                </li>
+            </a>
+            <li class="nav-item active" style="margin-left: 4rem;">
+                <a href="./index.html" class="nav-link" id="nav_bar_item">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link pages_drop">Pages</a>
+                <ul class="pages-drop_menu">
+                    <li class="pages-drop_item">Location</li>
+                    <li class="pages-drop_item">Contact</li>
+                    <li class="pages-drop_item">About us</li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link" id="nav_bar_item">Shop</a>
+            </li>
+            <li style="margin: 0rem 1rem;position: absolute;right:10rem;">
+                <a href="./cart.html"><span class="nav-link" style="margin-top: 33%;font-size: 2rem;color: rgb(255, 255, 255);cursor: pointer;"><i class="fal fa-shopping-cart"></i></span></a>
+            </li>
+            <li style="margin: 0rem 1rem;position: absolute;right:6rem;">
+                <span class="nav-link" style="margin-top: 33%;font-size: 2rem;color: rgb(255, 255, 255);cursor: pointer;"><i class="fal fa-search"></i></span>
+            </li>
+            <li style="margin: 0rem 1rem;position: absolute;right:2rem;">
+                <span class="nav-link" style="margin-top: 33%;font-size: 2rem;color: rgb(255, 255, 255);cursor: pointer;"><i class="fal fa-bars"></i></span>
+            </li>
+        </ul>
+    </nav>
+    <div class="container product">
+        <div class="product_item left_bane">
+            <img src="./images/coffee1.png" alt="" id="product_img">
+        </div>
+        <div class="product_item right_bane">
+            <h2 id="coffee_name">COFFRE NAME</h2>
+            <p id="product_price">£00.00</p>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="rating_count">(100)</p>
+            </div>
+            <p id="product_description">
+                A lot of offers and discounts for our best customers.
+                A lot of offers and discounts for our best customers
+            </p>
+            <div id="product_order_btns">
+                <div style="display: flex;margin-bottom: 4rem;">
+                    <div style="display: flex;margin-top: 2rem;">
+                        <input type="number" name="" id="count" value="1">
+                        <button id="count_up" onclick="count_up()">+</button>
+                        <button id="count_down" onclick="count_down()">-</button>
+                    </div>
+                    <div>
+                        <button id="add_to_cart" onclick="AddToCart()">ADD TO CART</button>
+                    </div>
+                </div>
+                <p id="sku"><span>SKU :</span> PR111-2</p>
+                <p id="CATEGORY"><span>CATEGORY :</span> Fresh Coffee</p>
+                <p id="tags"><span>TAGS :</span> Black, Casual, Classic</p>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <p style="margin-left: 7.4rem;font-size:3.3rem;">RELATED PRODUCTS</p>
+        <div id="related_product">
+            <div id="related_product_item" onclick="load2(this)">
+                <img src="./images/product-img-12.jpg" alt="">
+                <p>METAL CUP</p>
+                <p id="pro_price">£129.00</p>
+                <form action="./product.html">
+                    <button class="add">SHOP NOW</button>
+                </form>
+            </div>
+            <div id="related_product_item"  onclick="load2(this)">
+                <img src="./images/product-img-6.jpg" alt="" srcset="">
+                <p>COFFEE KETTLE</p>
+                <p id="pro_price">£250.00</p>
+                <form action="./product.html">
+                    <button class="add">SHOP NOW</button>
+                </form>
+            </div>
+            <div id="related_product_item"  onclick="load2(this)">
+                <img src="./images/product-img-7.jpg" alt="" srcset="">
+                <p>ESPRESSO MACHINE</p>
+                <p id="pro_price">£1.600.00</p>
+                <form action="./product.html">
+                    <button class="add">SHOP NOW</button>
+                </form>
+            </div>
+            <div id="related_product_item" onclick="load2(this)">
+                <img src="./images/coffee1.png" alt="" srcset="">
+                <p id="pro_name">CAIRO COFFEE</p>
+                <p id="pro_price">£60.00</p>
+                <form action="./product.html">
+                    <button class="add">SHOP NOW</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('coffee_name').innerHTML = localStorage.getItem("name");
+        document.getElementById('product_price').innerHTML = localStorage.getItem("price");
+        x = localStorage.getItem("name");
+        if (x == 'ASWAN COFFEE'){
+            document.getElementById('product_img').src = "./images/coffee4.png";
+        }else if(x == 'GIZA COFFEE') {
+            document.getElementById('product_img').src = "./images/coffee3.png";
+        }else if(x == 'ALEX COFFEE'){
+            document.getElementById('product_img').src = "./images/coffee2.png";
+        };
+        document.getElementById('product_img').src = localStorage.getItem("src");
+    </script>
+</body>
+</html>

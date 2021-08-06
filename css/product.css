@@ -1,0 +1,129 @@
+.product {
+    display: flex;
+}
+.product_item {
+    width: 50%;
+    height: 70rem;
+    background-color: black;
+}
+.left_bane {
+    background-color: white;
+    padding: 1rem;
+}
+.left_bane img {
+    width: 65rem;
+    height: 80rem;
+    margin-left: -10rem;
+    margin-top: -10rem;
+}
+.right_bane {
+    background-color: white;
+    padding: 1rem;
+    padding-top: 3rem;
+}
+#coffee_name {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#product_price {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #be9c79;
+    width: max-content  ;
+}
+#product_description {
+    margin-top: 4rem;
+    line-height: 3rem;
+    width: 40rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+#count {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+}
+#count_up ,#count_down {
+    border: 1px solid #CCCCCC;
+    width: 3rem;
+    height: 2.55rem;
+    margin: 0px;
+    display: block;
+    position:absolute;
+}
+#count_up {
+    margin-left: 4.9rem;
+}
+#count_down {
+    margin-left: 4.9rem;
+    margin-top: 2.4rem;
+}
+#add_to_cart {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: #BE9C79;
+    padding: 1.2rem 3rem;
+    left: 4.5rem;
+    border: 0px;
+    border-radius: .4rem;
+    margin-top: 1.96rem;
+    margin-left: 5rem;
+}
+#add_to_cart:hover {
+    background-color: #000;
+    -webkit-transition: .7s;
+}
+#sku ,#CATEGORY ,#tags {
+    font-size: 1.6rem;
+}
+#product_order_btns {
+    margin-top: 9rem;
+}
+#sku span ,#CATEGORY span ,#tags span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.rating {
+    float: left;
+    text-align: left;
+    margin: 1rem 0rem;
+    width: 100%;
+    display: flex;
+}
+.rating span {color:orange;}
+.rating_count {
+    margin-top: -2px;
+    margin-left: 3px;
+}
+#related_product {
+    display: flex;
+    width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+#related_product_item {
+    width: 25%;
+    height: 38rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+#related_product_item img {
+    width: 100%;
+}
+#related_product_item p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+#related_product_item #pro_price {
+    font-size: 1.7rem;
+    font-weight: 50;
+    color: #BE9C79;
+}
+#related_product_item .add {
+    margin-left: 1rem;
+}
